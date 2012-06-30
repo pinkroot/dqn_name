@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="UTF-8">
+<html lang="utf-8">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./css/style.css">
 	<script type="text/javascript" src="./js/myFunc.js"></script>
 	<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+
 	<title>キラキラネーム プラクティス</title>
 </head>
-
 <body>
 	<header class="page_header">
 		<a href="./index.html"><img src="./img/logo.png"></a>
@@ -15,16 +15,30 @@
 
 	<section class="contents">
 		<article class="explain">
-			<p>ここにサービスの説明が入るんだぜぇ？ワイルドだろぉ？</p>
+			<p>ここにサービスの説明が入るんだぜぇ？ワイルドだろぉ？</p>	
 		</article>
 
 		<section class="quiz_area">
 			<div class="vertical-middle">
-				<a href="./quiz.html"><img src="./img/start.gif"></a>
+				<article class="dqn_name">
+					<p>ここにDQNネームが入るんだぜぇ？ワイルドだろぉ？</p>
+				</article>
+
+				<article class="form_area">
+					<input id="input_text" type="text" size="40" onKeyPress="push_enter();">
+				</article>
 			</div>
 		</section>
+
+		<article id="test">
+			<p id="test_str"></p>
+		</article>
+
 	
 	</section>
+
+	<footer class="page_footer">
+	</footer>
 
 </body>
 </html>

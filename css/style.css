@@ -4,4 +4,44 @@
 	text-align: center;
 }
 
+.contents{
+}
 
+.explain{
+	margin-top: 50px;
+}
+
+.quiz_area{
+	margin-top: 100px;
+	padding: 50px 0px 50px 0px;
+	width: 60%;
+	height: 200px;
+	border: solid #b343c8 1px;
+	border-radius: 30px;
+	display: table;
+}
+
+.result_area{
+	margin-top: 100px;
+	padding: 50px 0px 50px 0px;
+	width: 60%;
+	height: 200px;
+	border: solid #b343c8 1px;
+	border-radius: 30px;
+	display: table;
+}
+
+.vertical-middle{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.dqn_name{
+	font-size: 2em;
+}
+
+#input_text{
+	margin-top: 30px;
+	font-size: 2em;
+	line-height: 30px;
+}

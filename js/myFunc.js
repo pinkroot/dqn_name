@@ -7,7 +7,6 @@ function submitFunc() {
 
 function push_enter(){
 	if( window.event.keyCode == 13 ){
-		//document.form1.submit();
 		submitFunc();
 	}	
 }
