@@ -15,12 +15,20 @@ function submitFunc() {
 	
 	//if (test_json.yomi_hiragana != input_ans){
 	else {
-		$("#result").html("<img src='./img/no.png'><br><p>正解は" + test_json.yomi_hiragana + "です");
-		
+		$("#result").html("<img src='./img/no.png'><br><p>せいかいは " + test_json.yomi_hiragana + " です");
+	
+		// 成績をアウトプットするための処理
 		setTimeout(function(){
 			$(".quiz_area").hide();
 
-			$("#clear_count").html(clear_count);
+			$("#clear_count").html(clear_count + "もん です");
+			$("#reach_count").html( + "にん です");
+			$("#kirakira_level").html( + "です");
+			
+			var str = "私はキラキラネームクイズに" + clear_count + "問正解しました！ ";
+			var url = "";
+
+			$("#tweet").html("<a href='https://twitter.com/intent/tweet?text=" + str + url +"' target='_blank'>" + "<img src=\"./img/tweet.gif\" alt=\"ツイートする\">" + "</a>");
 
 			$(".result_area").show();
 		}, 2000);
