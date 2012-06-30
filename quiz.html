@@ -2,9 +2,9 @@
 <html lang="utf-8">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./css/style.css">
-	<script type="text/javascript" src="./js/myFunc.js"></script>
 	<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="./js/myFunc.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
 
 	<title>キラキラネーム プラクティス</title>
 </head>
@@ -20,13 +20,31 @@
 
 		<section class="quiz_area">
 			<div class="vertical-middle">
-				<article class="dqn_name">
-					<p>ここにDQNネームが入るんだぜぇ？ワイルドだろぉ？</p>
-				</article>
+				<p id="dqn_name">ここにDQNネームが入るんだぜぇ？ワイルドだろぉ？</p>
 
-				<article class="form_area">
+				<article id="form_area">
+					<p id="result"></p>
 					<input id="input_text" type="text" size="40" onKeyPress="push_enter();">
 				</article>
+			</div>
+		</section>
+
+		<section class="result_area">
+			<div class="vertical-middle">
+				<table id="result_table"  border="0">
+					<tr>
+						<td class="table_left">あなたの正解数</td>
+						<td class="table_right" id="clear_count"></td>
+					</tr>
+					<tr>
+						<td class="table_left">ここまでたどり着いた人の数</td>
+						<td class="table_right" id="reach_count"></td>
+					</tr>
+					<tr>
+						<td class="table_left">あなたのキラキラ成績</td>
+						<td class="table_right" id="kirakira_rank"></td>
+					</tr>
+				</table>
 			</div>
 		</section>
 

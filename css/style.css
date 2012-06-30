@@ -36,7 +36,7 @@
 	vertical-align: middle;
 }
 
-.dqn_name{
+#dqn_name{
 	font-size: 2em;
 }
 
@@ -44,4 +44,25 @@
 	margin-top: 30px;
 	font-size: 2em;
 	line-height: 30px;
+}
+
+
+#result_table{
+	width: 700px;
+	font-size: 2em;
+}
+
+.table_left{
+	width: 70%;
+	height: 60px;
+	text-align: left;
+}
+
+.table_right{
+	text-align: center;
+}
+
+#result{
+	position: relative;
+	z-index: 5;
 }
