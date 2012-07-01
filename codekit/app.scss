@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 60px; }
+
+.question {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  .frame {
+    min-height: 209px;
+    background-image: url('../images/frame_middle.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  /* スタート画面 */
+  #start {
+    .base {
+      position: relative;
+      font-weight: bold;
+    }
+    .title {
+      @extend .base;
+      left: 245px;
+      top: 20px;
+    }
+    .play {
+      @extend .base;
+      left: 245px;
+      top: 50px;
+    }
+  }
+
+  #gameover {
+    .base {
+      position: relative;
+    }
+    .img {
+      @extend .base;
+      left: 220px;
+      top: 20px;
+    }
+    #replay_btn {
+      @extend .base;
+      left: 490px;
+      top: 45px;
+    }
+  }
+
+  /* 出題画面 */
+  #game {
+    .base {
+      position: relative;
+      font-weight: bold;
+    }
+    .number {
+      @extend .base;
+      font-size: 18px;
+      left: 245px;
+      top: 20px;
+    }
+    .name {
+      @extend .base;
+      text-align: center;
+      white-space:nowrap;
+      font-size: 40px;
+      font-family: "ヒラギノ明朝 Pro W6","HiraMinPro-W6","ＭＳ Ｐ明朝","MS PMincho";
+      left: 300px;
+      top: 35px;
+      max-width: 300px;
+    }
+    .answer {
+      @extend .base;
+      left: 300px;
+      top: 80px;
+      .input{
+        @extend input[type="text"];
+        font-size: 20px;
+        height: 28px;
+        width: 320px;
+        text-align: center;
+      }
+    }
+    .timer {
+      @extend .base;
+      font-size: 14px;
+      left: 610px;
+      top: 20px;
+    }
+    .wrong {
+      color: #B94A48;
+      border-color: #B94A48;
+    }
+  }
+}

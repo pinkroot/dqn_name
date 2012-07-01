@@ -1,0 +1,65 @@
+!!!
+%html
+  %head
+    %meta{:charset => "UTF-8"}
+
+    / -------------------------------------------
+    / Included CSS Files
+    / -------------------------------------------
+    / original
+    %link{:href => "stylesheets/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/app.css", :rel => "stylesheet", :type => "text/css"}
+
+    / -------------------------------------------
+    / Included JS Files
+    / -------------------------------------------
+    / jQuery
+    %script{:src => "javascripts/jquery-1.7.2.min.js"}
+    %script{:src => "javascripts/jquery.textchange.min.js"}
+    / Twitter Bootstrap
+    %script{:src => "javascripts/bootstrap.min.js"}
+    / original uglifier
+    %script{:src => "javascripts/app.js"}
+
+    %title キラキラネームプラクティス
+
+  %body
+
+  .container
+    .row
+      .span12
+        %center
+          %a{:href => "/"}
+            %img{:src => "images/kirankira_logo.png"}
+
+    .row
+      .span12
+        .question
+          .frame
+            #gameover
+              %img{:class => "img", :src => "images/gameover.png"}
+              %br
+              %button{:id => "replay_btn", :class => "btn btn-large"}<
+                もう一度プレイする
+                %i{:class=>"icon-play"}<
+
+
+            #start
+              .title [ゲーム説明]
+              / さいきん ふえてきた すてきな キラキラネーム
+              /	でも よみかたが わからない って ひとが おおいみたい ＞＜
+              / すてきな なまえの おともだちを ふやすために
+              / クイズを しながら べんきょう しましょう ♪
+
+              .play
+                %button{:id => "play_btn", :class => "btn btn-large"}<
+                  開始
+                  %i{:class=>"icon-play"}<
+            #game
+              .number Q.1
+              .timer 残り10秒
+              .name 幻の銀侍
+              .answer
+                %input{:id => "answer_text", :class => "input", :type =>"text", :placeholder=> "ふりがなをひらがなで入力..."}
+
+

@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 60px; }
+
+.question {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  /* スタート画面 */
+  /* 出題画面 */ }
+  .question .frame {
+    min-height: 209px;
+    background-image: url("../images/frame_middle.png");
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .question #start .base, .question #start .title, .question #start .play, .question #start #gameover .img, .question #gameover #start .img, .question #start #gameover #replay_btn, .question #gameover #start #replay_btn, .question #start #game .number, .question #game #start .number, .question #start #game .name, .question #game #start .name, .question #start #game .answer, .question #game #start .answer, .question #start #game .timer, .question #game #start .timer {
+    position: relative;
+    font-weight: bold; }
+  .question #start .title {
+    left: 245px;
+    top: 20px; }
+  .question #start .play {
+    left: 245px;
+    top: 50px; }
+  .question #gameover .base, .question #gameover #start .title, .question #start #gameover .title, .question #gameover #start .play, .question #start #gameover .play, .question #gameover .img, .question #gameover #replay_btn, .question #gameover #game .number, .question #game #gameover .number, .question #gameover #game .name, .question #game #gameover .name, .question #gameover #game .answer, .question #game #gameover .answer, .question #gameover #game .timer, .question #game #gameover .timer {
+    position: relative; }
+  .question #gameover .img {
+    left: 220px;
+    top: 20px; }
+  .question #gameover #replay_btn {
+    left: 490px;
+    top: 45px; }
+  .question #game .base, .question #game #start .title, .question #start #game .title, .question #game #start .play, .question #start #game .play, .question #game #gameover .img, .question #gameover #game .img, .question #game #gameover #replay_btn, .question #gameover #game #replay_btn, .question #game .number, .question #game .name, .question #game .answer, .question #game .timer {
+    position: relative;
+    font-weight: bold; }
+  .question #game .number {
+    font-size: 18px;
+    left: 245px;
+    top: 20px; }
+  .question #game .name {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 40px;
+    font-family: "ヒラギノ明朝 Pro W6","HiraMinPro-W6","ＭＳ Ｐ明朝","MS PMincho";
+    left: 300px;
+    top: 35px;
+    max-width: 300px; }
+  .question #game .answer {
+    left: 300px;
+    top: 80px; }
+    .question #game .answer .input {
+      font-size: 20px;
+      height: 28px;
+      width: 320px;
+      text-align: center; }
+  .question #game .timer {
+    font-size: 14px;
+    left: 610px;
+    top: 20px; }
+  .question #game .wrong {
+    color: #B94A48;
+    border-color: #B94A48; }

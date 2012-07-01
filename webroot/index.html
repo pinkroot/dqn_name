@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <!-- ------------------------------------------- -->
+    <!-- Included CSS Files -->
+    <!-- ------------------------------------------- -->
+    <!-- original -->
+    <link href='stylesheets/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='stylesheets/app.css' rel='stylesheet' type='text/css'>
+    <!-- ------------------------------------------- -->
+    <!-- Included JS Files -->
+    <!-- ------------------------------------------- -->
+    <!-- jQuery -->
+    <script src='javascripts/jquery-1.7.2.min.js'></script>
+    <script src='javascripts/jquery.textchange.min.js'></script>
+    <!-- Twitter Bootstrap -->
+    <script src='javascripts/bootstrap.min.js'></script>
+    <!-- original uglifier -->
+    <script src='javascripts/app.js'></script>
+    <title>キラキラネームプラクティス</title>
+  </head>
+  <body></body>
+  <div class='container'>
+    <div class='row'>
+      <div class='span12'>
+        <center>
+          <a href='/'>
+            <img src='images/kirankira_logo.png'>
+          </a>
+        </center>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='span12'>
+        <div class='question'>
+          <div class='frame'>
+            <div id='gameover'>
+              <img class='img' src='images/gameover.png'>
+              <br>
+              <button class='btn btn-large' id='replay_btn'>もう一度プレイする
+              <i class='icon-play'></i></button>
+            </div>
+            <div id='start'>
+              <div class='title'>[ゲーム説明]</div>
+              <!-- さいきん ふえてきた すてきな キラキラネーム -->
+              <!-- でも よみかたが わからない って ひとが おおいみたい ＞＜ -->
+              <!-- すてきな なまえの おともだちを ふやすために -->
+              <!-- クイズを しながら べんきょう しましょう ♪ -->
+              <div class='play'>
+                <button class='btn btn-large' id='play_btn'>開始
+                <i class='icon-play'></i></button>
+              </div>
+            </div>
+            <div id='game'>
+              <div class='number'>Q.1</div>
+              <div class='timer'>残り10秒</div>
+              <div class='name'>幻の銀侍</div>
+              <div class='answer'>
+                <input class='input' id='answer_text' placeholder='ふりがなをひらがなで入力...' type='text'>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
