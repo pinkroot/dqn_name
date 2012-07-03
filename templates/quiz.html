@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="utf-8">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="/static/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="/static/js/myFunc.js"></script>
+	<link rel="stylesheet" href="/static/css/style.css">
+
+	<title>キラキラネーム プラクティス</title>
+</head>
+<body>
+	<header class="page_header">
+		<a href="./index.html"><img src="./img/logo.png"></a>
+	
+ 
+		<div id="social_button">
+    	<div class="ninja_onebutton">
+				<script type="text/javascript">
+//<![CDATA[
+(function(d){
+if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_a881c0377531f5f472e5d948ad3214f0)=='undefined'){
+    document.write("<sc"+"ript type='text\/javascript' src='http:\/\/omt.shinobi.jp\/b\/a881c0377531f5f472e5d948ad3214f0'><\/sc"+"ript>");
+}else{ 
+    window.NINJA_CO_JP_ONETAG_BUTTON_a881c0377531f5f472e5d948ad3214f0.ONETAGButton_Load();}
+})(document);
+//]]>
+				</script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>
+			</div>
+		</div>
+	</header>
+	
+	<section class="contents">
+		<article class="explain">
+			<p>
+				さいきん ふえてきた すてきな キラキラネーム<br />
+				でも よみかたが わからない って ひとが おおいみたい ＞＜<br />
+				すてきな なまえの おともだちを ふやすために<br />
+				クイズを しながら べんきょう しましょう ♪
+			</p>
+		</article>
+
+		<section class="quiz_area">
+			<div class="vertical-middle">
+				<p id="dqn_name">ここにDQNネームが入るんだぜぇ？ワイルドだろぉ？</p>
+
+				<article id="form_area">
+					<p id="result"></p>
+					<input id="input_text" type="text" size="20" onKeyPress="push_enter();">
+				</article>
+			</div>
+		</section>
+
+		<section class="result_area">
+			<div class="vertical-middle">
+				<table id="result_table"  border="0">
+					<tr>
+						<td class="table_left">あなたの せいかいすう</td>
+						<td class="table_right" id="clear_count"></td>
+					</tr>
+					<tr>
+						<td class="table_left">ここまで たどりついたひと</td>
+						<td class="table_right" id="reach_count"></td>
+					</tr>
+					<tr>
+						<td class="table_left">あなたの キラキラレベル</td>
+						<td class="table_right" id="kirakira_level"></td>
+					</tr>
+				</table>
+				<p id="tweet"></p>
+			</div>
+		</section>
+
+		<article id="test">
+			<p id="test_str"></p>
+		</article>
+
+	
+	</section>
+
+	<footer class="page_footer">
+	</footer>
+
+</body>
+</html>
